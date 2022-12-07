@@ -1,10 +1,10 @@
 // 119. Pascal's Triangle II
 func rowGenerator() func() [] int {
     row := 0
-    var preRow, curRow []int
+    preRow := make([]int, 1)
 
     return func() [] int {
-        curRow = make([]int, row+1)
+        curRow := make([]int, row+1)
         for i := 0; i <= row; i++{
             curRow[0], curRow[i] = 1, 1
             for j := 1; j < i; j++ {
