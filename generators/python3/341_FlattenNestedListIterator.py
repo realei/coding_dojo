@@ -21,7 +21,17 @@
 #        """
 
 """
-Ref: https://leetcode.com/problems/flatten-nested-list-iterator/solutions/80247/Python-Generators-solution/comments/164433/
+Ref: 
+Eng(Python generator):
+https://leetcode.com/problems/flatten-nested-list-iterator/solutions/80247/Python-Generators-solution/comments/164433/
+
+CN(DFS//stack):
+https://leetcode.cn/problems/flatten-nested-list-iterator/solution/bian-ping-hua-qian-tao-lie-biao-die-dai-ipjzq/
+
+* 嵌套的整型列表是一个树形结构，树上的叶子节点对应一个整数，非叶节点对应一个列表。
+
+* 我们可以用一个栈来代替方法一中的递归过程。具体来说，用一个栈来维护深度优先搜索时，从根节点到当前节点路径上的所有节点。由于非叶节点对应的是一个列表，我们在栈中存储的是指向列表当前遍历的元素的指针（下标）。
+
 Q1: what is `.isInteger()`, `.getInteger()` & `.getList()`?
     Ans: please check above defination of NestedInteger, the input type is `nestedList: [NestedInteger]`
 """
