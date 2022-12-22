@@ -1,2 +1,2 @@
-# programming_style_leetcode
-This is a collection of my programming style exercise with leetcide
+# coding dojo
+This is a collection of my programming style exercise with leetcode
