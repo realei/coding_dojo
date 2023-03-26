@@ -1,7 +1,7 @@
 from typing import Callable
 
 
-def get_row() -> Callable:
+def row_generator() -> Callable:
     row, pre_row = 0, []
     def func() -> List[int]:
         nonlocal row, pre_row
@@ -19,5 +19,5 @@ def get_row() -> Callable:
 
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
-        f = get_row()
+        f = row_generator()
         return [f() for _ in range(numRows)]    
